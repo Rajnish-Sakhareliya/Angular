@@ -1,0 +1,136 @@
+<app-header/>
+<div>
+<!-- <h1> hello {{name}} </h1>
+<h2> this is title fetchimg ; {{title}}</h2>
+<br/>
+<button (click)="getName('rajnish')">Clik to hello</button>
+<br/>
+<br/>
+<input type="text" #box (keyup)="getValue(box.value)" placeholder="please entre name">
+<input type="text" #box disabled={{name}}>
+<input type="text" #box [disabled]=name>
+<br/>
+<app-user-list/>
+<app-blog-list/>
+<app-blog-detail/>
+<app-detail-and-list />
+<app-login/> -->
+
+
+  <!-- /if ese if use multiple if
+
+  <ng-template [ngIf]="color === 'red'">
+        <h1 style="color: red;">Red Color</h1>
+  </ng-template>
+  <ng-template [ngIf]="color === 'green'">
+    <h1 style="color: green">green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'yelllow'">
+    <h1>yelllow Color</h1>
+</ng-template>
+
+//switchcase
+
+<div [ngSwitch]="color">
+
+    <h1 *ngSwitchCase="'red'" style="color: red;">
+        Red color
+    </h1>
+
+    <h1 *ngSwitchCase="'green'" style="color: green;">
+        green color
+    </h1>
+
+    <h1 *ngSwitchDefault>
+        unknown color
+    </h1>
+
+</div> -->
+
+<!-- /loop
+
+<h1 *ngFor="let name of nameArray">
+    {{name}}
+</h1>
+
+// style binding
+
+<h1 [style.color]="color">Style binding example</h1> -->
+</div>
+
+<div>
+    <app-todo-list [todoTitle] = "todoTitle" (setTitleFromChildEvent) = "setTitleFromChild($event)"/>
+    <button (click)="changeTodoTitle()">Change title</button>
+</div>
+
+<div>
+    <h1>Two Way Biding</h1>
+
+    <input type="text" [(ngModel)]="twoWay"/>
+    <h3>{{twoWay}}</h3>
+</div>
+
+<!-- <form #basicDetailsForm="ngForm" (ngSubmit)="getData(basicDetailsForm.value)">
+    <input type="text" ngModel placeholder="user name" name="userName"/><br/><br/>
+    <input type="text" ngModel placeholder="user surname" name="userSurname"/><br/><br/>
+    <input type="text" ngModel placeholder="user mobile" name="userMobile"/><br/><br/>
+    <input type="text" ngModel placeholder="user email" name="userEmail"/><br/><br/>
+
+    <button>Sumbit</button>
+</form> -->
+
+<!-- <div ngbAccordion>
+	<div ngbAccordionItem [collapsed]="false">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>Simple</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+					moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+					keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+					butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+					haven't heard of them accusamus labore sustainable VHS.
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem>
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>
+				<span>&#9733; <b>Fancy</b> title &#9733;</span>
+			</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+					moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+					keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+					butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+					haven't heard of them accusamus labore sustainable VHS.
+				</ng-template>
+			</div>
+		</div>
+	</div>
+	<div ngbAccordionItem [disabled]="true">
+		<h2 ngbAccordionHeader>
+			<button ngbAccordionButton>Disabled</button>
+		</h2>
+		<div ngbAccordionCollapse>
+			<div ngbAccordionBody>
+				<ng-template>
+					Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+					officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+					moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+					keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+					butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+					haven't heard of them accusamus labore sustainable VHS.
+				</ng-template>
+			</div>
+		</div>
+	</div>
+</div> -->

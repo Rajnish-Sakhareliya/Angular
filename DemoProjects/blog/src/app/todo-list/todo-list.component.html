@@ -1,0 +1,19 @@
+
+<h1>{{todoTitle}}</h1>
+<div>
+    <input type="text" #todoInput placeholder="add todo">
+    <button (click)="addIteam(todoInput.value)">ADD</button>
+</div>
+
+<div>
+    <h2 *ngFor="let todo of todos">
+        {{todo.name}} 
+        <button (click)="removeTodo(todo.id)">REMOVE</button>
+    </h2>
+</div>
+
+<div>
+    <h1>Add your title child to parent</h1>
+    <input type="text" #titleOfTodo/>
+    <button (click)="setTitleFromChildEvent.emit(titleOfTodo.value)" >SET NEW TITLE</button>
+</div>
