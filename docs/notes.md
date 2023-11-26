@@ -259,3 +259,19 @@ L-32
 - Template refernce variable 
 
 #name <== this id or trv
+
+=== 
+L-33 to 36
+
+- Pipes : In Angular, pipes are a way to transform data in your templates before displaying it. 
+{{ "this show in upper case" | "uppercase"}}
+
+- custome pipe
+To generate pipes==> ng g p pipes/usdInr
+
+===
+L-37 : forms
+
+1) Template-driven forms : mostly operation in the template file
+
+2) Reactive forms : in ts file

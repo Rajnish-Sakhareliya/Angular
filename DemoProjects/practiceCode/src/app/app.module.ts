@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { InrUsdPipe } from './pipes/inr-usd.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     BlogDetailComponent,
     DetailAndListComponent,
     HeaderComponent,
-    TodoListComponent
+    TodoListComponent,
+    InrUsdPipe
   ],
   imports: [
     BrowserModule,

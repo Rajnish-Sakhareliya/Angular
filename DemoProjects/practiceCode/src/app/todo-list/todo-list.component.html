@@ -7,7 +7,9 @@
 
 <div>
     <h2 *ngFor="let todo of todos">
-        {{todo.name}} 
+        {{todo.name | uppercase}} 
+        {{ 1234.5678 | number:'3.2-2' }}
+        {{20 | inrUsd : 2 : "$"}}
         <button (click)="removeTodo(todo.id)">REMOVE</button>
     </h2>
 </div>
