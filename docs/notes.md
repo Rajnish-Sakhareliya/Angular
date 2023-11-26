@@ -274,4 +274,4 @@ L-37 : forms
 
 1) Template-driven forms : mostly operation in the template file
 
-2) Reactive forms : in ts file
+2) Reactive forms : in .ts file
